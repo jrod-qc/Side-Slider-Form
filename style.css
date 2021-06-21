@@ -1,0 +1,255 @@
+body {
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    animation: mymove 3s forwards;
+    animation-iteration-count: 1;
+}
+
+#side-slider-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition-delay: 2s;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.side-slider-main-box {
+    width: 50%;
+    height: 70vh;
+    background-color: #fff;
+    box-shadow: #0003 0px 4px 5px;
+    overflow: hidden;
+}
+
+#side-slider-btn-box {
+    position: fixed;
+    left: 0;
+    bottom: 20%;
+    width: 150px;
+    background-color: #df3030;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    border: 3px solid #fff;
+    border-left: none;
+}
+
+#side-slider-btn-box>p {
+    color: #fff;
+    text-align: center;
+}
+
+#side-slider-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 87%;
+}
+
+.side-slider-exit-btn-box {
+    width: 100%;
+    height: 13%;
+    background-color: #df3030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-slider-exit-btn {
+    width: 95%;
+    text-align: right;
+    font-size: 2em !important;
+    /* padding: 10px 20px; */
+    margin: 0 auto;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#side-slider-exit-btn:hover {
+    color: #242424;
+}
+
+.side-slider-item-image {
+    width: 50%;
+    height: 100%;
+    background-image: url("images/SCOTT-MONEY-update.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#side-slider-item-text,
+#side-slider-item-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto;
+}
+
+.side-slider-item-form-text-content {
+    width: 90%;
+}
+
+.side-slider-item-text-info {
+    width: 90%;
+}
+
+.side-slider-item-text-info>h2 {
+    width: 100%;
+}
+
+.side-slider-item-text-info>h1,
+h2,
+p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.side-slider-item-text-info>h1 {
+    font-size: 4em;
+}
+
+.side-slider-item-image>img {
+    width: 100%;
+    height: auto;
+}
+
+.side-slider-clickon-form-btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#side-slider-clickon-form-btn {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #df3030;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#side-slider-clickon-form-btn:hover {
+    background-color: #cb2a2a;
+}
+
+@keyframes mymove {
+    0% {
+        background-color: none;
+    }
+    100% {
+        background-color: #000000b0;
+    }
+}
+
+.special-deal-icon {
+    font-size: 1em;
+    display: none;
+}
+
+@media only screen and (max-width:1120px) {
+    .side-slider-main-box {
+        width: 95%;
+    }
+    #side-slider-clickon-form-btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .side-slider-item-image {
+        display: none;
+    }
+    #side-slider-item-text {
+        width: 100%;
+    }
+    .special-deal-icon {
+        display: block;
+    }
+    .special-deal-text {
+        display: none;
+    }
+    #side-slider-btn-box {
+        width: 50px;
+        bottom: 20.5%;
+    }
+    #side-slider-item-form {
+        width: 90%;
+        height: 100%;
+        overflow: auto;
+    }
+    #side-slider-content {
+        height: 87%;
+        align-items: flex-start;
+    }
+    .side-slider-main-box {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .side-slider-main-box {
+        width: 95%;
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-height:825px) {
+    .side-slider-main-box {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-height:700px) {
+    .side-slider-main-box {
+        height: 87vh;
+    }
+}
